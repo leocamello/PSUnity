@@ -1,0 +1,8 @@
+build: false
+
+install:
+  - cinst pester
+
+test_script:
+  - ps: $tests = Invoke-Pester -Path ".\PSUnity.Tests" -PassThru
+  - ps: if ($tests.FailedCount -gt 0) { throw "$($tests.FailedCount) tests failed." }
