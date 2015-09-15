@@ -26,7 +26,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Public\" />
+    <Folder Include="Private\" />
+  </ItemGroup>
   <ItemGroup>
     <Compile Include="PSUnity.psd1" />
     <Compile Include="PSUnity.psm1" />
