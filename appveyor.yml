@@ -1,7 +1,7 @@
 build: false
 
 install:
-  - cinst unity
+  - cinst unity -version 4.6.2
   - cinst pester
 
 test_script:
