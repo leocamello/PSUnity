@@ -11,7 +11,6 @@ Project("{F5034706-568F-408A-B7B3-4D38C6DB8A32}") = "PSUnity.Tests", "PSUnity.Te
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{D42567CF-3DDE-4D9C-8398-D38B9B9C74D9}"
 	ProjectSection(SolutionItems) = preProject
-		.gitattributes = .gitattributes
 		.gitignore = .gitignore
 		appveyor.yml = appveyor.yml
 		LICENSE = LICENSE
