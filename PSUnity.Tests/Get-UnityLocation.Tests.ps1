@@ -1,10 +1,10 @@
 #
-# Get-UnityVersion.Tests.ps1
+# Get-UnityLocation.Tests.ps1
 #
 
 Import-Module $PSScriptRoot\..\PSUnity -Force
 
-Describe "Get-UnityVersion" {
+Describe "Get-UnityLocation" {
 	InModuleScope PSUnity {
 		Context "No Unity is installed" {
 			Mock Get-ItemProperty { }
@@ -12,10 +12,10 @@ Describe "Get-UnityVersion" {
 				Get-UnityVersion | Should Throw
 			}
 		}
-		Context "Unity version 5.2 is installed" {
+		Context "Unity is installed in 'C:\Program Files (x86)\Unity'" {
 			Mock Get-ItemProperty {	@{ Location="C:\Program Files (x86)\Unity"; Version="5.2"; } }
-			It "Should outputs '5.2'" {
-				Get-UnityVersion | Should Be "5.2"
+			It "Should outputs 'C:\Program Files (x86)\Unity'" {
+				Get-UnityLocation | Should Be "C:\Program Files (x86)\Unity"
 			}
 		}
 	}
