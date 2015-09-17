@@ -1,0 +1,10 @@
+[Ll]ibrary/
+[Tt]emp/
+[Bb]in/
+[Ll]ib/
+[Oo]bj/
+
+# Visual Studio solution and project files
+*.pssproj
+*.sln
+*.suo
